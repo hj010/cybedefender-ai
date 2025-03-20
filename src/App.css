@@ -1,0 +1,268 @@
+/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 20px; /* Adds space between the logo and the heading */
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  /* align-items: center; */
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 40px; /* Adjust logo size */
+  height: auto;
+  margin-right: 10px; /* Adds space between logo and text */
+  margin-bottom: 10px;
+}
+
+h2 {
+ margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* App.css */
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.tabs button.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  transform: scale(1.05); /* Slight scale effect for active button */
+}
+
+.tabs button.active {
+  background-color: #007bff; /* Registration button color */
+  color: white;
+  border-radius: 6px;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  padding: 12px 24px; /* Increase padding for the active button */
+}
+
+.tabs button:not(.active) {
+  background-color: #f0f0f0; /* Normal state color */
+  color: #000;
+}
+
+.tabs button:not(.active):hover {
+  background-color: #e0e0e0; /* Slightly darker color when hovering over non-active button */
+}
+
+
+.form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form button {
+  width: 94%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.password-container img.toggleImage {
+  position: absolute;
+  top: 50%;
+  right: 43px; /* Adjust the position of the icon inside the input */
+  transform: translateY(-50%); /* Centers the icon vertically */
+  cursor: pointer;
+  width: 20px; /* Optional: Set width for the icon */
+  height: 20px; /* Optional: Set height for the icon */
+}
+
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.back-to-signin {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+/* .back-to-signin:hover {
+  text-decoration: underline;
+} */
+
+
+.error {
+  color: red;
+  
+}
+.terms {
+  display: flex;
+  align-items: center; /* Aligns the checkbox and text vertically */
+  margin-bottom: 10px;
+  gap: 8px; /* Adds consistent spacing between the checkbox and the label */
+}
+
+.terms input[type="checkbox"] {
+  margin: 0; /* Removes extra space around the checkbox */
+  padding: 0; /* Ensures no padding is added by the browser */
+  width: 16px; /* Standard size for a checkbox */
+  height: 16px;
+}
+
+.terms label {
+  font-size: 14px;
+  line-height: 1.4; /* Adjusts spacing for multi-line text */
+  margin: 0; /* Removes default margin */
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+
+.form-label + input {
+  margin-top: 5px; /* Adjust this value to control spacing */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+.success-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success-message .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.success-message .tick img {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  display: block;
+}
+
+.success-message h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Adjust color as needed */
+}
+
+.success-message .text-Grey-500 {
+  color: #666; /* Adjust color as needed */
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.success-message .signIn {
+  color: #00a991; /* Adjust color as needed */
+  /* text-decoration: underline; */
+  cursor: pointer;
+}
+
