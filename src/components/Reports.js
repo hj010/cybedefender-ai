@@ -27,7 +27,7 @@ const Reports = ({ onLogout }) => {
   const fetchReports = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://127.0.0.1:5000/reports');
+      const response = await fetch('https://www.cybedefenderai.com/reports');
       if (!response.ok) {
         throw new Error('Failed to fetch reports');
       }
@@ -45,7 +45,7 @@ const Reports = ({ onLogout }) => {
   // Handle file download
   const handleDownload = async (fileName) => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/download/${fileName}`);
+      const response = await fetch(`https://www.cybedefenderai.com/download/${fileName}`);
       if (!response.ok) {
         throw new Error('Failed to download file');
       }

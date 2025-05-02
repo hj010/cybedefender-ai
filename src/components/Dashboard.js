@@ -22,7 +22,7 @@ const Dashboard = ({ onLogout }) => {
 
   const fetchCybedefenderData = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/cybedefender/Dashboard');
+      const response = await fetch('https://www.cybedefenderai.com/cybedefender/Dashboard');
       const data = await response.json();
 
       // Extracting month-wise anomalies
@@ -51,7 +51,7 @@ const Dashboard = ({ onLogout }) => {
   useEffect(() => {
     const fetchAlerts = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/cybedefender/alerts"); // Replace with your API URL
+        const response = await fetch("https://www.cybedefenderai.com/cybedefender/alerts"); // Replace with your API URL
         const data = await response.json();
         console.log("alerts", data.alerts)
         if (!data.alerts) return;

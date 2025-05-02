@@ -33,7 +33,7 @@ const Alerts = ({ onLogout }) => {
             
             // Replace '123' with actual userId from your auth system
             const userId = '123'; 
-            const response = await fetch(`http://127.0.0.1:5000/cybedefender/alerts`);
+            const response = await fetch(`https://www.cybedefenderai.com/cybedefender/alerts`);
             
             if (!response.ok) {
                 throw new Error('Failed to fetch alerts');

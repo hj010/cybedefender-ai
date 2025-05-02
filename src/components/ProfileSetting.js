@@ -55,7 +55,7 @@ const ProfileSettings = ({ onLogout }) => {
       }
 
       const response = await axios.post(
-        'http://127.0.0.1:5000/cybedefender/change-password',
+        'https://www.cybedefenderai.com/cybedefender/change-password',
         {
           oldPassword,
           newPassword

@@ -116,7 +116,7 @@ const FileUploadModal = ({ isOpen, onClose }) => {
       };
 
       // Open and send the request
-      xhr.open('POST', 'http://127.0.0.1:5000/upload', true);
+      xhr.open('POST', 'https://www.cybedefenderai.com/upload', true);
       xhr.send(formData);
     } catch (error) {
       setUploadStatus('failed');
